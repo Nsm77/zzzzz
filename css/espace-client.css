@@ -1,0 +1,36 @@
+/* css/espace-client.css */
+.login-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: var(--bg-color-light);
+    padding: 2.5rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color-light);
+}
+
+.login-section, .dashboard-section {
+    display: none;
+}
+
+.login-section.active, .dashboard-section.active {
+    display: block;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+#login-form .btn, #logout-button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.8rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
