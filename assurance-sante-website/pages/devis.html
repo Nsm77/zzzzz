@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Obtenez votre devis d'assurance santé gratuit en 2 minutes. Formulaire simple, tarifs personnalisés, réponse immédiate. Comparez nos formules.">
+    <meta name="keywords" content="devis assurance santé gratuit, tarif mutuelle, simulation assurance, devis en ligne, prix assurance santé">
+    <meta name="author" content="Assurance Santé Premium">
+    
+    <title>Devis Gratuit en 2 Minutes | Assurance Santé Premium</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Devis Gratuit Assurance Santé - 2 Minutes">
+    <meta property="og:description" content="Obtenez votre devis personnalisé gratuit en 2 minutes. Tarifs compétitifs, couverture optimale.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://assurance-sante-premium.fr/devis.html">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/mobile-nav.css">
+    <link rel="stylesheet" href="../css/devis.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/mobile-nav-top-simple.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Navigation principale">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="../index.html" class="logo" aria-label="Accueil Assurance Santé Premium">
+                        <i class="fas fa-shield-heart" aria-hidden="true"></i>
+                        Assurance Santé
+                    </a>
+                </div>
+                
+                <!-- Bouton hamburger pour mobile -->
+                <button class="hamburger" id="hamburger" aria-label="Menu de navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Overlay pour fermer le menu -->
+                <div class="nav-overlay" id="nav-overlay"></div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a href="../index.html" class="nav-link" role="menuitem">Accueil</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="services.html" class="nav-link" role="menuitem">Services</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="faq.html" class="nav-link" role="menuitem">FAQ</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="contact.html" class="nav-link" role="menuitem">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-nav-actions">
+                        <a href="devis.html" class="btn btn-primary" aria-label="Obtenir un devis gratuit">
+                            <i class="fas fa-file-medical" aria-hidden="true"></i>
+                            Obtenir un devis
+                        </a>
+                        <a href="tel:+33982444148" class="btn btn-outline" aria-label="Appeler le 09 82 44 41 48">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            09 82 44 41 48
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Devis Hero -->
+    <section class="devis-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Obtenez Votre Devis Gratuit</h1>
+            <p data-aos="fade-up" data-aos-delay="200">En seulement 2 minutes, découvrez la formule qui vous convient</p>
+        </div>
+    </section>
+
+    <!-- Devis Content -->
+    <section class="devis-content">
+        <div class="container">
+            <!-- Progress Bar -->
+            <div class="progress-bar" data-aos="fade-up">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+
+            <!-- Step Indicator -->
+            <div class="step-indicator" data-aos="fade-up" data-aos-delay="200">
+                <div class="step active" id="step-1">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Vos informations</div>
+                </div>
+                <div class="step" id="step-2">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Votre situation</div>
+                </div>
+                <div class="step" id="step-3">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Vos besoins</div>
+                </div>
+            </div>
+
+            <!-- Form Steps -->
+            <form id="devis-form">
+                <!-- Step 1: Personal Information -->
+                <div class="form-step active" id="form-step-1" data-aos="fade-up">
+                    <h3>Vos Informations Personnelles</h3>
+                    <p class="subtitle">Commençons par faire connaissance</p>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone *</label>
+                            <input type="tel" id="telephone" name="telephone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date_naissance">Date de naissance *</label>
+                            <input type="date" id="date_naissance" name="date_naissance" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="code_postal">Code postal *</label>
+                            <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" required>
+                        </div>
+                    </div>
+
+                    <div class="form-navigation">
+                        <div></div>
+                        <button type="button" class="btn btn-primary" onclick="nextStep()">
+                            Suivant <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Situation -->
+                <div class="form-step" id="form-step-2">
+                    <h3>Votre Situation</h3>
+                    <p class="subtitle">Aidez-nous à mieux vous connaître</p>
+                    
+                    <div class="form-group">
+                        <label>Votre situation professionnelle *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="salarie" name="situation_pro" value="salarie" required>
+                                <label for="salarie" class="radio-card">
+                                    <i class="fas fa-briefcase"></i>
+                                    <h4>Salarié</h4>
+                                    <p>Vous êtes employé en CDI, CDD, intérim...</p>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="independant" name="situation_pro" value="independant">
+                                <label for="independant" class="radio-card">
+                                    <i class="fas fa-user-tie"></i>
+                                    <h4>Indépendant</h4>
+                                    <p>Artisan, commerçant, profession libérale...</p>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="retraite" name="situation_pro" value="retraite">
+                                <label for="retraite" class="radio-card">
+                                    <i class="fas fa-chair"></i>
+                                    <h4>Retraité</h4>
+                                    <p>Vous êtes à la retraite</p>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="etudiant" name="situation_pro" value="etudiant">
+                                <label for="etudiant" class="radio-card">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h4>Étudiant</h4>
+                                    <p>Vous êtes inscrit dans un établissement</p>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="sans_emploi" name="situation_pro" value="sans_emploi">
+                                <label for="sans_emploi" class="radio-card">
+                                    <i class="fas fa-user-slash"></i>
+                                    <h4>Sans emploi</h4>
+                                    <p>Vous êtes à la recherche d'un emploi</p>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="autre_pro" name="situation_pro" value="autre">
+                                <label for="autre_pro" class="radio-card">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    <h4>Autre</h4>
+                                    <p>Autre situation professionnelle</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Votre situation familiale *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="celibataire" name="situation_famille" value="celibataire" required>
+                                <label for="celibataire" class="radio-card">
+                                    <i class="fas fa-user"></i>
+                                    <h4>Célibataire</h4>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="couple" name="situation_famille" value="couple">
+                                <label for="couple" class="radio-card">
+                                    <i class="fas fa-user-friends"></i>
+                                    <h4>En couple</h4>
+                                </label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="famille" name="situation_famille" value="famille">
+                                <label for="famille" class="radio-card">
+                                    <i class="fas fa-users"></i>
+                                    <h4>Famille</h4>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nb_enfants">Nombre d'enfants à charge (si applicable)</label>
+                        <input type="number" id="nb_enfants" name="nb_enfants" min="0" value="0">
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline btn-prev" onclick="prevStep()">
+                            <i class="fas fa-arrow-left"></i> Précédent
+                        </button>
+                        <button type="button" class="btn btn-primary" onclick="nextStep()">
+                            Suivant <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Needs -->
+                <div class="form-step" id="form-step-3">
+                    <h3>Vos Besoins en Santé</h3>
+                    <p class="subtitle">Précisez vos attentes pour une offre sur-mesure</p>
+                    
+                    <div class="form-group">
+                        <label for="niveau_couverture">Niveau de couverture souhaité *</label>
+                        <select id="niveau_couverture" name="niveau_couverture" required>
+                            <option value="">-- Sélectionnez --</option>
+                            <option value="essentiel">Essentiel (Remboursement minimum)</option>
+                            <option value="confort">Confort (Bon remboursement)</option>
+                            <option value="premium">Premium (Remboursement optimal)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Besoins spécifiques (cochez toutes les options pertinentes)</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="dentaire" name="besoins_specifiques" value="dentaire">
+                                <label for="dentaire">Soins dentaires (prothèses, orthodontie)</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="optique" name="besoins_specifiques" value="optique">
+                                <label for="optique">Optique (lunettes, lentilles)</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="hospitalisation" name="besoins_specifiques" value="hospitalisation">
+                                <label for="hospitalisation">Hospitalisation (chambre particulière)</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="medecines_douces" name="besoins_specifiques" value="medecines_douces">
+                                <label for="medecines_douces">Médecines douces (ostéopathie, acupuncture)</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="maternite" name="besoins_specifiques" value="maternite">
+                                <label for="maternite">Maternité</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="commentaire">Commentaire (facultatif)</label>
+                        <textarea id="commentaire" name="commentaire" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline btn-prev" onclick="prevStep()">
+                            <i class="fas fa-arrow-left"></i> Précédent
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            Obtenir mon devis <i class="fas fa-calculator"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Results Section -->
+            <div class="results-section" id="results-section">
+                <h3>Votre Devis Personnalisé</h3>
+                <p class="subtitle">Voici une estimation de votre prime mensuelle et les garanties incluses.</p>
+                
+                <div class="price-display">
+                    <p>Votre prime mensuelle estimée :</p>
+                    <p class="price" id="estimated-price">-- €</p>
+                    <p class="period">par mois</p>
+                </div>
+
+                <h4>Garanties incluses :</h4>
+                <ul class="features-list">
+                    <li><i class="fas fa-check-circle"></i> Médecine Générale & Spécialisée</li>
+                    <li><i class="fas fa-check-circle"></i> Hospitalisation & Chirurgie</li>
+                    <li><i class="fas fa-check-circle"></i> Pharmacie & Médicaments</li>
+                    <li id="dentaire-guarantee" style="display: none;"><i class="fas fa-check-circle"></i> Soins Dentaires</li>
+                    <li id="optique-guarantee" style="display: none;"><i class="fas fa-check-circle"></i> Optique & Vision</li>
+                    <li id="hospitalisation-guarantee" style="display: none;"><i class="fas fa-check-circle"></i> Chambre Particulière</li>
+                    <li id="medecines-douces-guarantee" style="display: none;"><i class="fas fa-check-circle"></i> Médecines Douces</li>
+                    <li id="maternite-guarantee" style="display: none;"><i class="fas fa-check-circle"></i> Maternité</li>
+                </ul>
+
+                <p>Un conseiller vous contactera sous 24h pour affiner votre offre.</p>
+                <button class="btn btn-primary" onclick="window.location.href='contact.html'">Contacter un conseiller</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-shield-heart"></i> Assurance Santé Premium</h4>
+                    <p>Votre partenaire de confiance pour une couverture santé optimale. Des solutions sur-mesure pour protéger votre famille et votre avenir.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="devis.html">Obtenir un Devis</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Informations Légales</h4>
+                    <ul>
+                        <li><a href="mentions.html">Mentions Légales</a></li>
+                        <li><a href="politique.html">Politique de Confidentialité</a></li>
+                        <li><a href="conditions.html">Conditions Générales de Vente</a></li>
+                        <li><a href="espace-client.html">Espace Client</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Rapide</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 99 rue de camas, 13005 Marseille</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+33982444148">09 82 44 41 48</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contact@assurance-sante-premium.fr">contact@assurance-sante-premium.fr</a></p>
+                    <p><i class="fas fa-clock"></i> Lun-Ven: 9h-18h</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Assurance Santé Premium. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container">
+            <p>Ce site utilise des cookies pour améliorer votre expérience de navigation et analyser notre trafic. En continuant, vous acceptez notre utilisation des cookies.</p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="btn btn-primary">Accepter</button>
+                <button id="customize-cookies" class="btn btn-outline">Personnaliser</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/script.js">
+    <script src="../js/mobile-nav.js"></script>
+    <script>
+        let currentStep = 1;
+        const totalSteps = 3;
+
+        function showStep(step) {
+            document.querySelectorAll(".form-step").forEach((el, index) => {
+                if (index + 1 === step) {
+                    el.classList.add("active");
+                } else {
+                    el.classList.remove("active");
+                }
+            });
+            document.querySelectorAll(".step").forEach((el, index) => {
+                if (index + 1 < step) {
+                    el.classList.add("completed");
+                    el.querySelector(".step-number").innerHTML = '<i class="fas fa-check"></i>';
+                } else if (index + 1 === step) {
+                    el.classList.add("active");
+                    el.classList.remove("completed");
+                    el.querySelector(".step-number").innerHTML = step;
+                } else {
+                    el.classList.remove("active", "completed");
+                    el.querySelector(".step-number").innerHTML = index + 1;
+                }
+            });
+            document.getElementById("progress-fill").style.width = `${(step / totalSteps) * 100}%`;
+        }
+
+        function nextStep() {
+            if (validateStep(currentStep)) {
+                if (currentStep < totalSteps) {
+                    currentStep++;
+                    showStep(currentStep);
+                } else {
+                    // Form submission logic (handled by event listener on form)
+                }
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        }
+
+        function validateStep(step) {
+            let isValid = true;
+            const currentFormStep = document.getElementById(`form-step-${step}`);
+            const requiredInputs = currentFormStep.querySelectorAll("[required]");
+
+            requiredInputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.style.borderColor = "red";
+                } else {
+                    input.style.borderColor = "";
+                }
+            });
+
+            // Specific validation for radio groups
+            const radioGroups = currentFormStep.querySelectorAll(".radio-group");
+            radioGroups.forEach(group => {
+                const radios = group.querySelectorAll("input[type=\"radio\"]");
+                const isChecked = Array.from(radios).some(radio => radio.checked);
+                if (!isChecked) {
+                    isValid = false;
+                    group.style.border = "1px solid red"; // Highlight the group
+                } else {
+                    group.style.border = "";
+                }
+            });
+
+            if (!isValid) {
+                alert("Veuillez remplir tous les champs obligatoires.");
+            }
+            return isValid;
+        }
+
+        document.getElementById("devis-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            if (validateStep(totalSteps)) {
+                // Collect form data
+                const formData = new FormData(this);
+                const data = {};
+                for (let [key, value] of formData.entries()) {
+                    if (key === "besoins_specifiques") {
+                        if (!data[key]) {
+                            data[key] = [];
+                        }
+                        data[key].push(value);
+                    } else {
+                        data[key] = value;
+                    }
+                }
+
+                // Simulate price calculation based on inputs
+                let price = 30; // Base price
+                if (data.situation_pro === "independant") price += 15;
+                if (data.situation_pro === "retraite") price += 20;
+                if (data.situation_famille === "couple") price += 25;
+                if (data.situation_famille === "famille") price += 40 + (data.nb_enfants * 10);
+
+                if (data.niveau_couverture === "confort") price += 20;
+                if (data.niveau_couverture === "premium") price += 50;
+
+                if (data.besoins_specifiques) {
+                    if (data.besoins_specifiques.includes("dentaire")) price += 10;
+                    if (data.besoins_specifiques.includes("optique")) price += 8;
+                    if (data.besoins_specifiques.includes("hospitalisation")) price += 12;
+                    if (data.besoins_specifiques.includes("medecines_douces")) price += 7;
+                    if (data.besoins_specifiques.includes("maternite")) price += 15;
+                }
+
+                document.getElementById("estimated-price").textContent = `${price} €`;
+
+                // Show/hide specific guarantees based on selection
+                document.getElementById("dentaire-guarantee").style.display = data.besoins_specifiques && data.besoins_specifiques.includes("dentaire") ? "flex" : "none";
+                document.getElementById("optique-guarantee").style.display = data.besoins_specifiques && data.besoins_specifiques.includes("optique") ? "flex" : "none";
+                document.getElementById("hospitalisation-guarantee").style.display = data.besoins_specifiques && data.besoins_specifiques.includes("hospitalisation") ? "flex" : "none";
+                document.getElementById("medecines-douces-guarantee").style.display = data.besoins_specifiques && data.besoins_specifiques.includes("medecines_douces") ? "flex" : "none";
+                document.getElementById("maternite-guarantee").style.display = data.besoins_specifiques && data.besoins_specifiques.includes("maternite") ? "flex" : "none";
+
+                document.getElementById("results-section").classList.add("active");
+                document.getElementById("devis-form").style.display = "none";
+            }
+        });
+
+        // Initial display
+        showStep(currentStep);
+    </script>
+    <script src="../js/mobile-nav-top-simple.js"></script>
+</body>
+</html>
+
+<meta property="og:image" content="../images/og-image.jpg">
+

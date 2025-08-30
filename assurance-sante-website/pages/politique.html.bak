@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Politique de confidentialité d'Assurance Santé Premium : protection des données personnelles, RGPD, cookies, droits des utilisateurs.">
+    <meta name="keywords" content="politique confidentialité, RGPD, données personnelles, protection, cookies">
+    <meta name="author" content="Assurance Santé Premium">
+    
+    <title>Politique de Confidentialité | Assurance Santé Premium</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/mobile-nav.css">
+    <link rel="stylesheet" href="../css/mobile-override.css">
+    <link rel="stylesheet" href="../css/politique.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Navigation principale">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="../index.html" class="logo" aria-label="Accueil Assurance Santé Premium">
+                        <i class="fas fa-shield-heart" aria-hidden="true"></i>
+                        Assurance Santé
+                    </a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a href="../index.html" class="nav-link" role="menuitem">Accueil</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="services.html" class="nav-link" role="menuitem">Services</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="faq.html" class="nav-link" role="menuitem">FAQ</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="contact.html" class="nav-link" role="menuitem">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-nav-actions">
+                        <a href="devis.html" class="btn btn-primary" aria-label="Obtenir un devis gratuit">
+                            <i class="fas fa-file-medical" aria-hidden="true"></i>
+                            Obtenir un devis
+                        </a>
+                        <a href="tel:+33982444148" class="btn btn-outline" aria-label="Appeler le 09 82 44 41 48">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            09 82 44 41 48
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Privacy Hero -->
+    <section class="privacy-hero">
+        <div class="container">
+            <h1>Politique de Confidentialité</h1>
+            <p>Protection et traitement de vos données personnelles</p>
+        </div>
+    </section>
+
+    <!-- Privacy Content -->
+    <section class="privacy-content">
+        <div class="container">
+            <!-- Introduction -->
+            <div class="privacy-section">
+                <h2>1. Introduction</h2>
+                
+                <p>Assurance Santé Premium accorde une importance particulière à la protection de vos données personnelles et au respect de votre vie privée. Cette politique de confidentialité vous informe sur la manière dont nous collectons, utilisons, stockons et protégeons vos données personnelles.</p>
+
+                <p>Cette politique s'applique à tous les services proposés par Assurance Santé Premium, que ce soit via notre site web, notre application mobile, nos bureaux ou par téléphone.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Engagement RGPD :</strong> Nous nous conformons strictement au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés modifiée.</p>
+                </div>
+            </div>
+
+            <!-- Responsable du traitement -->
+            <div class="privacy-section">
+                <h2>2. Responsable du traitement</h2>
+                
+                <div class="info-box">
+                    <h4>Assurance Santé Premium</h4>
+                    <p><strong>Adresse :</strong> 99 rue de camas, 13005 Marseille, France</p>
+                    <p><strong>Téléphone :</strong> 09 82 44 41 48</p>
+                    <p><strong>Email :</strong> contact@assurance-sante-premium.fr</p>
+                    <p><strong>Représentant légal :</strong> Jean-Pierre MARTIN, Président</p>
+                </div>
+
+                <h3>Délégué à la Protection des Données (DPO)</h3>
+                <p>Nous avons désigné un Délégué à la Protection des Données que vous pouvez contacter pour toute question relative au traitement de vos données personnelles :</p>
+                
+                <div class="info-box">
+                    <p><strong>Email DPO :</strong> dpo@assurance-sante-premium.fr</p>
+                    <p><strong>Adresse :</strong> DPO - Assurance Santé Premium, 99 rue de camas, 13005 Marseille</p>
+                </div>
+            </div>
+
+            <!-- Données collectées -->
+            <div class="privacy-section">
+                <h2>3. Données personnelles collectées</h2>
+                
+                <p>Nous collectons différents types de données personnelles selon vos interactions avec nos services :</p>
+
+                <h3>Données d'identification</h3>
+                <ul>
+                    <li>Nom, prénom, date de naissance</li>
+                    <li>Adresse postale, email, numéro de téléphone</li>
+                    <li>Numéro de sécurité sociale</li>
+                    <li>Pièce d'identité (pour la souscription)</li>
+                </ul>
+
+                <h3>Données de santé</h3>
+                <ul>
+                    <li>Questionnaire médical (si requis)</li>
+                    <li>Informations sur vos antécédents médicaux</li>
+                    <li>Factures et remboursements de soins</li>
+                    <li>Données relatives à vos consultations médicales</li>
+                </ul>
+
+                <h3>Données financières</h3>
+                <ul>
+                    <li>Coordonnées bancaires (RIB)</li>
+                    <li>Informations sur les paiements</li>
+                    <li>Historique des cotisations</li>
+                </ul>
+
+                <h3>Données de navigation</h3>
+                <ul>
+                    <li>Adresse IP, type de navigateur</li>
+                    <li>Pages visitées, durée de visite</li>
+                    <li>Cookies et technologies similaires</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>Données sensibles :</strong> Les données de santé sont des données particulièrement protégées. Nous les traitons uniquement avec votre consentement explicite et dans le cadre strict de nos obligations légales.</p>
+                </div>
+            </div>
+
+            <!-- Finalités du traitement -->
+            <div class="privacy-section">
+                <h2>4. Finalités du traitement</h2>
+                
+                <p>Nous utilisons vos données personnelles pour les finalités suivantes :</p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Finalité</th>
+                            <th>Base légale</th>
+                            <th>Durée de conservation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gestion des contrats d'assurance</td>
+                            <td>Exécution du contrat</td>
+                            <td>Durée du contrat + 10 ans</td>
+                        </tr>
+                        <tr>
+                            <td>Traitement des sinistres et remboursements</td>
+                            <td>Exécution du contrat</td>
+                            <td>10 ans après clôture du dossier</td>
+                        </tr>
+                        <tr>
+                            <td>Prospection commerciale</td>
+                            <td>Intérêt légitime</td>
+                            <td>3 ans après dernier contact</td>
+                        </tr>
+                        <tr>
+                            <td>Gestion de la relation client</td>
+                            <td>Exécution du contrat</td>
+                            <td>Durée de la relation + 5 ans</td>
+                        </tr>
+                        <tr>
+                            <td>Respect des obligations légales</td>
+                            <td>Obligation légale</td>
+                            <td>Selon la réglementation</td>
+                        </tr>
+                        <tr>
+                            <td>Amélioration de nos services</td>
+                            <td>Intérêt légitime</td>
+                            <td>3 ans</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Partage des données -->
+            <div class="privacy-section">
+                <h2>5. Partage et transmission des données</h2>
+                
+                <p>Vos données personnelles peuvent être partagées avec :</p>
+
+                <h3>Partenaires internes</h3>
+                <ul>
+                    <li>Nos filiales et sociétés du groupe</li>
+                    <li>Nos collaborateurs habilités</li>
+                    <li>Nos conseillers et experts médicaux</li>
+                </ul>
+
+                <h3>Partenaires externes</h3>
+                <ul>
+                    <li><strong>Professionnels de santé :</strong> Pour la gestion des remboursements</li>
+                    <li><strong>Réassureurs :</strong> Dans le cadre de la couverture des risques</li>
+                    <li><strong>Prestataires techniques :</strong> Hébergement, maintenance informatique</li>
+                    <li><strong>Organismes de contrôle :</strong> ACPR, CNIL, autorités judiciaires</li>
+                </ul>
+
+                <h3>Transferts hors UE</h3>
+                <p>Certains de nos prestataires peuvent être situés hors de l'Union Européenne. Dans ce cas, nous nous assurons que des garanties appropriées sont mises en place (clauses contractuelles types, décision d'adéquation de la Commission européenne).</p>
+
+                <div class="highlight-box">
+                    <p><strong>Principe de minimisation :</strong> Nous ne partageons que les données strictement nécessaires à la finalité poursuivie et avec des partenaires liés par des obligations de confidentialité.</p>
+                </div>
+            </div>
+
+            <!-- Sécurité -->
+            <div class="privacy-section">
+                <h2>6. Sécurité des données</h2>
+                
+                <p>Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles :</p>
+
+                <h3>Mesures techniques</h3>
+                <ul>
+                    <li>Chiffrement des données sensibles (SSL/TLS)</li>
+                    <li>Authentification forte et contrôle d'accès</li>
+                    <li>Sauvegarde régulière et sécurisée</li>
+                    <li>Surveillance et détection des intrusions</li>
+                    <li>Mise à jour régulière des systèmes de sécurité</li>
+                </ul>
+
+                <h3>Mesures organisationnelles</h3>
+                <ul>
+                    <li>Formation du personnel à la protection des données</li>
+                    <li>Politique de sécurité informatique stricte</li>
+                    <li>Accès aux données limité aux personnes habilitées</li>
+                    <li>Procédures de gestion des incidents de sécurité</li>
+                    <li>Audits de sécurité réguliers</li>
+                </ul>
+
+                <div class="info-box">
+                    <h4>En cas de violation de données</h4>
+                    <p>Si malgré nos précautions, une violation de données personnelles survenait, nous nous engageons à :</p>
+                    <ul>
+                        <li>Notifier la CNIL dans les 72 heures</li>
+                        <li>Vous informer si le risque pour vos droits est élevé</li>
+                        <li>Prendre toutes les mesures nécessaires pour limiter l'impact</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Droits des personnes -->
+            <div class="privacy-section">
+                <h2>7. Vos droits</h2>
+                
+                <p>Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :</p>
+
+                <div class="rights-grid">
+                    <div class="right-card">
+                        <h4><i class="fas fa-user-check"></i> Droit d'accès</h4>
+                        <p>Vous pouvez demander à accéder aux données personnelles que nous détenons sur vous.</p>
+                    </div>
+                    <div class="right-card">
+                        <h4><i class="fas fa-edit"></i> Droit de rectification</h4>
+                        <p>Vous pouvez demander la correction de données inexactes ou incomplètes.</p>
+                    </div>
+                    <div class="right-card">
+                        <h4><i class="fas fa-trash-alt"></i> Droit à l'effacement (droit à l'oubli")</h4>
+                        <p>Vous pouvez demander la suppression de vos données dans certaines conditions.</p>
+                    </div>
+                    <div class="right-card">
+                        <h4><i class="fas fa-ban"></i> Droit d'opposition</h4>
+                        <p>Vous pouvez vous opposer au traitement de vos données pour des raisons légitimes.</p>
+                    </div>
+                    <div class="right-card">
+                        <h4><i class="fas fa-download"></i> Droit à la portabilité</h4>
+                        <p>Vous pouvez récupérer vos données dans un format structuré et lisible.</p>
+                    </div>
+                    <div class="right-card">
+                        <h4><i class="fas fa-pause"></i> Droit à la limitation</h4>
+                        <p>Vous pouvez demander la limitation du traitement de vos données.</p>
+                    </div>
+                </div>
+
+                <h3>Comment exercer vos droits ?</h3>
+                <p>Pour exercer vos droits, vous pouvez :</p>
+                <ul>
+                    <li>Nous contacter par email : dpo@assurance-sante-premium.fr</li>
+                    <li>Nous écrire à l'adresse : DPO - Assurance Santé Premium, 99 rue de camas, 13005 Marseille</li>
+                    <li>Utiliser le formulaire dédié sur votre espace client</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>Délai de réponse :</strong> Nous nous engageons à répondre à votre demande dans un délai d'un mois à compter de sa réception. Ce délai peut être prolongé de deux mois en cas de demande complexe.</p>
+                </div>
+
+                <h3>Droit de réclamation</h3>
+                <p>Si vous estimez que le traitement de vos données personnelles constitue une violation du RGPD, vous avez le droit d'introduire une réclamation auprès de la CNIL :</p>
+                
+                <div class="info-box">
+                    <h4>Commission Nationale de l'Informatique et des Libertés (CNIL)</h4>
+                    <p><strong>Adresse :</strong> 3 Place de Fontenoy - TSA 80715 - 75334 PARIS CEDEX 07</p>
+                    <p><strong>Téléphone :</strong> 01 53 73 22 22</p>
+                    <p><strong>Site web :</strong> <a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a></p>
+                </div>
+            </div>
+
+            <!-- Cookies -->
+            <div class="privacy-section">
+                <h2>8. Cookies et technologies similaires</h2>
+                
+                <p>Notre site utilise des cookies pour améliorer votre expérience de navigation et analyser l'utilisation de nos services.</p>
+
+                <h3>Types de cookies utilisés</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Type de cookie</th>
+                            <th>Finalité</th>
+                            <th>Durée de conservation</th>
+                            <th>Consentement requis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cookies essentiels</td>
+                            <td>Fonctionnement du site</td>
+                            <td>Session</td>
+                            <td>Non</td>
+                        </tr>
+                        <tr>
+                            <td>Cookies de performance</td>
+                            <td>Analyse d'audience</td>
+                            <td>13 mois</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>Cookies fonctionnels</td>
+                            <td>Préférences utilisateur</td>
+                            <td>12 mois</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>Cookies publicitaires</td>
+                            <td>Publicité ciblée</td>
+                            <td>13 mois</td>
+                            <td>Oui</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Gestion des cookies</h3>
+                <p>Vous pouvez gérer vos préférences de cookies :</p>
+                <ul>
+                    <li>Via le bandeau de consentement lors de votre première visite</li>
+                    <li>En modifiant les paramètres de votre navigateur</li>
+                    <li>En utilisant notre centre de préférences cookies</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>Important :</strong> La désactivation de certains cookies peut affecter le fonctionnement optimal de notre site web.</p>
+                </div>
+            </div>
+
+            <!-- Modifications -->
+            <div class="privacy-section">
+                <h2>9. Modifications de la politique</h2>
+                
+                <p>Cette politique de confidentialité peut être modifiée pour refléter les changements dans nos pratiques de traitement des données ou les évolutions réglementaires.</p>
+
+                <p>En cas de modification substantielle, nous vous en informerons par :</p>
+                <ul>
+                    <li>Email à l'adresse que vous nous avez communiquée</li>
+                    <li>Notification sur votre espace client</li>
+                    <li>Bandeau d'information sur notre site web</li>
+                </ul>
+
+                <p><strong>Date de dernière mise à jour :</strong> 20 août 2025</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="privacy-section">
+                <h2>10. Contact</h2>
+                
+                <p>Pour toute question concernant cette politique de confidentialité ou le traitement de vos données personnelles, n'hésitez pas à nous contacter :</p>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h4><i class="fas fa-envelope"></i> Par email</h4>
+                        <p>dpo@assurance-sante-premium.fr</p>
+                    </div>
+                    <div class="contact-card">
+                        <h4><i class="fas fa-phone"></i> Par téléphone</h4>
+                        <p>09 82 44 41 48</p>
+                        <small>Du lundi au vendredi, 9h-18h</small>
+                    </div>
+                    <div class="contact-card">
+                        <h4><i class="fas fa-map-marker-alt"></i> Par courrier</h4>
+                        <p>DPO - Assurance Santé Premium<br>
+                        99 rue de camas<br>
+                        13005 Marseille, France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-shield-heart"></i> Assurance Santé Premium</h4>
+                    <p>Votre partenaire de confiance pour une couverture santé optimale. Des solutions sur-mesure pour protéger votre famille et votre avenir.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="devis.html">Obtenir un Devis</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Informations Légales</h4>
+                    <ul>
+                        <li><a href="mentions.html">Mentions Légales</a></li>
+                        <li><a href="politique.html">Politique de Confidentialité</a></li>
+                        <li><a href="conditions.html">Conditions Générales de Vente</a></li>
+                        <li><a href="espace-client.html">Espace Client</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Rapide</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 99 rue de camas, 13005 Marseille</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+33982444148">09 82 44 41 48</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contact@assurance-sante-premium.fr">contact@assurance-sante-premium.fr</a></p>
+                    <p><i class="fas fa-clock"></i> Lun-Ven: 9h-18h</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Assurance Santé Premium. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js">
+    <script src="../js/mobile-nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

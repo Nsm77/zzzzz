@@ -1,0 +1,43 @@
+# Robots.txt pour Assurance Santé Premium
+# https://assurance-sante-premium.fr/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://assurance-sante-premium.fr/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+
+# Allow important directories
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

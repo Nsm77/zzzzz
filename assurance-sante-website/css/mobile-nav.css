@@ -1,0 +1,264 @@
+/* Navigation mobile améliorée */
+
+/* Masquer le hamburger par défaut sur desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+    background: rgba(127, 0, 30, 0.1);
+}
+
+.hamburger span {
+    width: 24px;
+    height: 3px;
+    background: #1B2B5C;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+}
+
+/* Animation du hamburger quand actif */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Styles pour mobile */
+@media (max-width: 992px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Masquer le menu de navigation normal sur mobile */
+    .nav-list {
+        display: none;
+    }
+    
+    /* Masquer les actions de navigation normales sur mobile */
+    .nav-actions {
+        display: none;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
+        transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1001;
+        padding-top: 80px;
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu.active .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+    
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid rgba(127, 0, 30, 0.1);
+    }
+    
+    .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 20px 30px;
+        font-size: 16px;
+        color: #1B2B5C;
+        text-transform: none;
+        letter-spacing: 0;
+        min-height: 60px;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+        background: rgba(127, 0, 30, 0.05);
+        color: #7F001E;
+        transform: translateX(10px);
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
+    
+    .nav-link::before {
+        content: \'\';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: #7F001E;
+        transform: scaleY(0);
+        transition: transform 0.3s ease;
+    }
+    
+    .nav-link:hover::before {
+        transform: scaleY(1);
+    }
+    
+    .nav-actions {
+        display: none;
+    }
+    
+    .mobile-nav-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 30px;
+        border-top: 1px solid rgba(127, 0, 30, 0.1);
+    }
+    
+    .mobile-nav-actions .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 16px;
+        font-size: 15px;
+    }    
+    /* Overlay sombre quand le menu est ouvert */
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Ajustements pour la navbar */
+    .navbar .container {
+        position: relative;
+    }
+    
+    .nav-brand {
+        flex: 1;
+    }
+    
+    .nav-brand .logo {
+        font-size: 1.5rem;
+    }
+    
+    .nav-brand .logo i {
+        font-size: 1.7rem;
+    }
+}
+
+/* Styles pour très petits écrans */
+@media (max-width: 480px) {
+    .nav-menu {
+        width: 100vw;
+        left: -100vw;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-actions {
+        width: 100vw;
+        left: -100vw;
+        padding: 20px;
+    }
+    
+    .nav-menu.active ~ .nav-actions,
+    .nav-actions.active {
+        left: 0;
+    }
+    
+    .nav-brand .logo {
+        font-size: 1.3rem;
+    }
+    
+    .nav-brand .logo i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animation d'entrée pour les éléments du menu */
+.nav-menu.active .nav-item {
+    animation: slideInFromLeft 0.3s ease forwards;
+}
+
+.nav-menu.active .nav-item:nth-child(1) { animation-delay: 0.1s; }
+.nav-menu.active .nav-item:nth-child(2) { animation-delay: 0.15s; }
+.nav-menu.active .nav-item:nth-child(3) { animation-delay: 0.2s; }
+.nav-menu.active .nav-item:nth-child(4) { animation-delay: 0.25s; }
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Amélioration de l'accessibilité */
+.hamburger:focus {
+    outline: 2px solid #7F001E;
+    outline-offset: 2px;
+}
+
+.nav-link:focus {
+    outline: 2px solid #7F001E;
+    outline-offset: -2px;
+}
+
+/* Support pour les préférences de mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+    .hamburger span,
+    .nav-menu,
+    .nav-actions,
+    .nav-overlay {
+        transition: none;
+    }
+    
+    .nav-item {
+        animation: none;
+    }
+}
+

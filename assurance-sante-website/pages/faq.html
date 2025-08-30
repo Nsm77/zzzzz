@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Questions fréquentes sur nos assurances santé : souscription, remboursements, couverture, résiliation. Trouvez toutes les réponses à vos questions.">
+    <meta name="keywords" content="FAQ assurance santé, questions fréquentes, souscription, remboursement, couverture, résiliation">
+    <meta name="author" content="Assurance Santé Premium">
+    
+    <title>FAQ - Questions Fréquentes | Assurance Santé Premium</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FAQ - Questions Fréquentes sur l'Assurance Santé">
+    <meta property="og:description" content="Trouvez toutes les réponses à vos questions sur nos assurances santé : souscription, remboursements, couverture.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://assurance-sante-premium.fr/faq.html">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/mobile-nav.css">
+    <link rel="stylesheet" href="../css/faq.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/mobile-nav-top-simple.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Navigation principale">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="../index.html" class="logo" aria-label="Accueil Assurance Santé Premium">
+                        <i class="fas fa-shield-heart" aria-hidden="true"></i>
+                        Assurance Santé
+                    </a>
+                </div>
+                
+                <!-- Bouton hamburger pour mobile -->
+                <button class="hamburger" id="hamburger" aria-label="Menu de navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Overlay pour fermer le menu -->
+                <div class="nav-overlay" id="nav-overlay"></div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a href="../index.html" class="nav-link" role="menuitem">Accueil</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="services.html" class="nav-link" role="menuitem">Services</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="faq.html" class="nav-link active" role="menuitem">FAQ</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="contact.html" class="nav-link" role="menuitem">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-nav-actions">
+                        <a href="devis.html" class="btn btn-primary" aria-label="Obtenir un devis gratuit">
+                            <i class="fas fa-file-medical" aria-hidden="true"></i>
+                            Obtenir un devis
+                        </a>
+                        <a href="tel:+33982444148" class="btn btn-outline" aria-label="Appeler le 09 82 44 41 48">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            09 82 44 41 48
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- FAQ Hero -->
+    <section class="faq-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Questions Fréquentes</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Trouvez rapidement les réponses à toutes vos questions sur nos assurances santé</p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content">
+        <div class="container">
+            <!-- Search Box -->
+            <div class="search-box" data-aos="fade-up">
+                <input type="text" id="faq-search" placeholder="Rechercher une question...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <!-- Categories -->
+            <div class="faq-categories" data-aos="fade-up" data-aos-delay="200">
+                <button class="category-btn active" data-category="all">Toutes</button>
+                <button class="category-btn" data-category="souscription">Souscription</button>
+                <button class="category-btn" data-category="remboursement">Remboursement</button>
+                <button class="category-btn" data-category="couverture">Couverture</button>
+                <button class="category-btn" data-category="gestion">Gestion</button>
+            </div>
+
+            <!-- Souscription -->
+            <div class="faq-section" data-category="souscription" data-aos="fade-up">
+                <h3><i class="fas fa-file-signature"></i> Souscription</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Comment souscrire à une assurance santé chez Assurance Santé Premium ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La souscription est simple et rapide. Vous pouvez :</p>
+                        <ul>
+                            <li>Faire une demande de devis en ligne en 2 minutes sur notre site</li>
+                            <li>Nous appeler au 09 82 44 41 48 pour être accompagné par un conseiller</li>
+                            <li>Prendre rendez-vous dans l'une de nos agences</li>
+                        </ul>
+                        <p>Une fois votre devis validé, vous recevrez votre contrat par email et courrier. La prise d'effet peut être immédiate ou différée selon vos besoins.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quels documents dois-je fournir pour souscrire ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pour finaliser votre souscription, vous devrez nous fournir :</p>
+                        <ul>
+                            <li>Une pièce d'identité en cours de validité</li>
+                            <li>Un justificatif de domicile de moins de 3 mois</li>
+                            <li>Votre relevé d'identité bancaire (RIB)</li>
+                            <li>Votre attestation de résiliation si vous changez d'assureur</li>
+                            <li>Un questionnaire de santé simplifié (selon la formule choisie)</li>
+                        </ul>
+                        <p>Tous ces documents peuvent être transmis de manière sécurisée via notre espace client en ligne.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Y a-t-il des délais de carence ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos délais de carence sont parmi les plus courts du marché :</p>
+                        <ul>
+                            <li>Soins courants : prise d'effet immédiate</li>
+                            <li>Hospitalisation : 30 jours (sauf urgence)</li>
+                            <li>Maternité : 10 mois</li>
+                            <li>Dentaire et optique : 6 mois</li>
+                        </ul>
+                        <p>En cas de changement d'assureur sans interruption de garanties, les délais de carence peuvent être supprimés.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Remboursement -->
+            <div class="faq-section" data-category="remboursement" data-aos="fade-up">
+                <h3><i class="fas fa-euro-sign"></i> Remboursement</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Comment fonctionne le tiers payant ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le tiers payant vous évite d'avancer les frais chez les professionnels de santé. Avec Assurance Santé Premium :</p>
+                        <ul>
+                            <li>Tiers payant intégral chez tous nos partenaires (médecins, pharmacies, laboratoires)</li>
+                            <li>Présentation de votre carte vitale et de votre carte de tiers payant</li>
+                            <li>Vous ne payez que le reste à charge éventuel</li>
+                            <li>Disponible dès le premier jour de votre contrat</li>
+                        </ul>
+                        <p>Notre réseau compte plus de 50 000 professionnels de santé partenaires en France.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quels sont les délais de remboursement ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos délais de remboursement sont optimisés :</p>
+                        <ul>
+                            <li>Soins avec tiers payant : remboursement automatique sous 48h</li>
+                            <li>Soins sans tiers payant : 5 jours ouvrés après réception des justificatifs</li>
+                            <li>Hospitalisation : 7 jours ouvrés maximum</li>
+                            <li>Dentaire et optique : 10 jours ouvrés</li>
+                        </ul>
+                        <p>Vous pouvez suivre l'état de vos remboursements en temps réel sur votre espace client.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Comment envoyer mes factures pour remboursement ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Plusieurs moyens s'offrent à vous :</p>
+                        <ul>
+                            <li>Application mobile : photographiez vos factures et envoyez-les instantanément</li>
+                            <li>Espace client en ligne : téléchargement sécurisé de vos documents</li>
+                            <li>Email : envoi à remboursement@assurance-sante-premium.fr</li>
+                            <li>Courrier : à notre adresse postale</li>
+                        </ul>
+                        <p>L'application mobile offre le traitement le plus rapide avec accusé de réception immédiat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Couverture -->
+            <div class="faq-section" data-category="couverture" data-aos="fade-up">
+                <h3><i class="fas fa-shield-alt"></i> Couverture</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Que couvre exactement mon contrat d'assurance santé ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Votre contrat d'assurance santé couvre une large gamme de dépenses médicales, selon la formule choisie :</p>
+                        <ul>
+                            <li>Consultations médicales (généralistes et spécialistes)</li>
+                            <li>Médicaments sur ordonnance</li>
+                            <li>Analyses médicales et examens radiologiques</li>
+                            <li>Hospitalisation (frais de séjour, honoraires chirurgicaux, chambre particulière)</li>
+                            <li>Soins dentaires (consultations, détartrages, prothèses, orthodontie)</li>
+                            <li>Soins optiques (lunettes, lentilles, opérations)</li>
+                            <li>Médecines douces (ostéopathie, acupuncture, chiropraxie, etc.)</li>
+                            <li>Cures thermales, appareillages, etc.</li>
+                        </ul>
+                        <p>Le détail précis de votre couverture est disponible dans votre tableau de garanties et sur votre espace client.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Puis-je ajouter des garanties supplémentaires à mon contrat ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, vous pouvez à tout moment demander à ajouter des garanties optionnelles à votre contrat, telles que :</p>
+                        <ul>
+                            <li>Renfort optique et dentaire</li>
+                            <li>Forfait bien-être (sport, nutrition, psychologue)</li>
+                            <li>Garantie hospitalisation renforcée</li>
+                            <li>Assistance voyage</li>
+                        </ul>
+                        <p>Contactez votre conseiller pour étudier les options disponibles et adapter votre contrat à l'évolution de vos besoins.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>La couverture est-elle valable à l'étranger ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos contrats incluent une couverture de base pour vos déplacements à l'étranger. Selon votre formule, vous pouvez bénéficier de :</p>
+                        <ul>
+                            <li>Prise en charge des urgences médicales</li>
+                            <li>Rapatriement sanitaire</li>
+                            <li>Assistance voyage 24h/24</li>
+                        </ul>
+                        <p>Pour des séjours prolongés ou des destinations spécifiques, nous vous recommandons de souscrire une extension de garantie voyage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gestion -->
+            <div class="faq-section" data-category="gestion" data-aos="fade-up">
+                <h3><i class="fas fa-cogs"></i> Gestion</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Comment accéder à mon espace client ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Votre espace client est accessible depuis notre site web en cliquant sur "Espace Client" en haut de la page. Vous pouvez également télécharger notre application mobile gratuite disponible sur l'App Store et Google Play.</p>
+                        <ul>
+                            <li>Identifiant : votre numéro de contrat ou email</li>
+                            <li>Mot de passe : celui que vous avez défini lors de l'inscription</li>
+                            <li>En cas d'oubli, utilisez la fonction "Mot de passe oublié"</li>
+                        </ul>
+                        <p>Votre espace client vous permet de consulter vos remboursements, télécharger vos attestations, modifier vos coordonnées et bien plus encore.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Comment résilier mon contrat ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Vous pouvez résilier votre contrat à tout moment après la première année, ou immédiatement dans certains cas :</p>
+                        <ul>
+                            <li><strong>Résiliation annuelle :</strong> 2 mois avant l'échéance avec lettre recommandée</li>
+                            <li><strong>Loi Chatel :</strong> Dans les 20 jours suivant l'avis d'échéance</li>
+                            <li><strong>Loi Hamon :</strong> À tout moment après 1 an de contrat</li>
+                            <li><strong>Changement de situation :</strong> Mariage, divorce, déménagement, etc.</li>
+                        </ul>
+                        <p>Notre service client vous accompagne dans toutes vos démarches de résiliation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Que faire en cas de réclamation ?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>En cas de réclamation, plusieurs solutions s'offrent à vous :</p>
+                        <ul>
+                            <li>Contactez directement votre conseiller dédié</li>
+                            <li>Utilisez le formulaire de réclamation sur votre espace client</li>
+                            <li>Envoyez un email à reclamation@assurance-sante-premium.fr</li>
+                            <li>Appelez notre service réclamation au 09 82 44 41 48</li>
+                        </ul>
+                        <p>Nous nous engageons à traiter votre réclamation dans les 10 jours ouvrés et à vous tenir informé de l'avancement du dossier.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact CTA -->
+            <div class="faq-cta" data-aos="fade-up">
+                <h3>Vous ne trouvez pas la réponse à votre question ?</h3>
+                <p>Notre équipe d'experts est à votre disposition pour vous accompagner</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Nous contacter
+                    </a>
+                    <a href="tel:+33982444148" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        09 82 44 41 48
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-shield-heart"></i> Assurance Santé Premium</h4>
+                    <p>Votre partenaire de confiance pour une couverture santé optimale. Des solutions sur-mesure pour protéger votre famille et votre avenir.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="devis.html">Obtenir un Devis</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Informations Légales</h4>
+                    <ul>
+                        <li><a href="mentions.html">Mentions Légales</a></li>
+                        <li><a href="politique.html">Politique de Confidentialité</a></li>
+                        <li><a href="conditions.html">Conditions Générales de Vente</a></li>
+                        <li><a href="espace-client.html">Espace Client</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Rapide</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 99 rue de camas, 13005 Marseille</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+33982444148">09 82 44 41 48</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contact@assurance-sante-premium.fr">contact@assurance-sante-premium.fr</a></p>
+                    <p><i class="fas fa-clock"></i> Lun-Ven: 9h-18h</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Assurance Santé Premium. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js">
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/faq.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/mobile-nav-top-simple.js"></script>
+</body>
+</html>
+
+<meta property="og:image" content="../images/og-image.jpg">
+
