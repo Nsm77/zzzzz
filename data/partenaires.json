@@ -1,0 +1,22 @@
+[
+  {
+    "nom": "Partenaire Optique 1",
+    "logo": "assets/img/logo-partenaire-1.webp",
+    "categorie": "Opticien"
+  },
+  {
+    "nom": "Clinique Partenaire A",
+    "logo": "assets/img/logo-partenaire-2.webp",
+    "categorie": "Clinique"
+  },
+  {
+    "nom": "Dentiste Partenaire B",
+    "logo": "assets/img/logo-partenaire-3.webp",
+    "categorie": "Dentiste"
+  },
+  {
+    "nom": "Laboratoire Partenaire C",
+    "logo": "assets/img/logo-partenaire-4.webp",
+    "categorie": "Laboratoire"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id":"eco",
+    "nom":"Éco",
+    "prixMensuel":24.90,
+    "remboursementOptique": "Base",
+    "remboursementDentaire":"Base",
+    "hospitalisation":"100% BR",
+    "telemedecine": false,
+    "avantages":["Carte tiers payant","Service client 5j/7"]
+  },
+  {
+    "id":"confort",
+    "nom":"Confort",
+    "prixMensuel":39.90,
+    "remboursementOptique":"+",
+    "remboursementDentaire":"+",
+    "hospitalisation":"200% BR",
+    "telemedecine": true,
+    "avantages":["Réseau optique partenaire","Téléconsultation 24/7"]
+  },
+  {
+    "id":"premium",
+    "nom":"Premium",
+    "prixMensuel":59.90,
+    "remboursementOptique":"++",
+    "remboursementDentaire":"++",
+    "hospitalisation":"300% BR",
+    "telemedecine": true,
+    "avantages":["Chambre particulière","Coach santé"]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "bien-choisir-sa-mutuelle-sante",
+    "titre": "Comment bien choisir sa mutuelle santé en 5 étapes",
+    "chapo": "Choisir une mutuelle n'est pas une mince affaire. Découvrez nos conseils pour trouver la couverture qui vous correspond vraiment.",
+    "date": "2025-08-15",
+    "image": "assets/img/blog-article-1.webp"
+  },
+  {
+    "slug": "comprendre-remboursements-dentaires",
+    "titre": "Comprendre les remboursements dentaires : BR, 100%, etc.",
+    "chapo": "La Base de Remboursement (BR) et les pourcentages peuvent être complexes. Nous décryptons tout pour vous.",
+    "date": "2025-08-02",
+    "image": "assets/img/blog-article-2.webp"
+  },
+  {
+    "slug": "avantages-teleconsultation",
+    "titre": "Les avantages de la téléconsultation au quotidien",
+    "chapo": "Gagnez du temps et consultez un médecin où que vous soyez. La téléconsultation révolutionne l'accès aux soins.",
+    "date": "2025-07-20",
+    "image": "assets/img/blog-article-3.webp"
+  }
+]
