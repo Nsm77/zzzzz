@@ -1,90 +1,120 @@
+@import "@fontsource-variable/newsreader/opsz.css";
+@import "@fontsource-variable/newsreader/opsz-italic.css";
+@import "@fontsource-variable/manrope/index.css";
 @import "tailwindcss";
 
+/* ═══════════════════════════════════════════════════════════════
+   CLÉOPÂTRE — design language
+   Maison d'excellence · esprit éditorial · précision pharmaceutique
+   warm ivory / ink / champagne + controlled campaign color worlds
+   ═══════════════════════════════════════════════════════════════ */
+
 @theme {
-  /* ── Backgrounds ───────────────────────────── */
-  --color-paper: #f7f4ee;
-  --color-paper-2: #f2eee6;
-  --color-cream: #fbf9f5;
-  --color-stone: #e8e2d8;
-  --color-stone-2: #d9d2c5;
-  --color-sand: #cfc4b2;
-  --color-sand-2: #bfb29c;
+  /* ── Paper & grounds ─────────────────────────── */
+  --color-paper: #f2ecdf; /* warm ivory */
+  --color-paper-2: #eae2d1; /* deeper ivory — alternates */
+  --color-cream: #faf6ec; /* near-white warm ground for cards/forms */
+  --color-ivory: #f6f1e6;
+  --color-stone: #e0d7c3; /* hairlines & neutral fills */
+  --color-stone-2: #c6bba1;
+  --color-sand: #b2a487;
+  --color-sand-2: #97885f;
 
-  /* ── Text ──────────────────────────────────── */
-  --color-ink: #17181a;
-  --color-charcoal: #2a2b2e;
-  --color-charcoal-2: #3d3f43;
-  --color-muted: #6f6a62;
-  --color-muted-2: #948d82;
+  /* ── Ink & text ──────────────────────────────── */
+  --color-ink: #211b12; /* warm near-black */
+  --color-charcoal: #38322a;
+  --color-charcoal-2: #52493e;
+  --color-muted: #6d6253;
+  --color-muted-2: #988b72;
 
-  /* ── Accent (champagne / soft bronze) ─────── */
-  --color-champagne: #b89a6a;
-  --color-champagne-2: #a5885a;
-  --color-champagne-3: #d8c4a0;
-  --color-champagne-soft: #efe6d6;
+  /* ── Champagne (signature accent) ───────────── */
+  --color-champagne: #a3803f;
+  --color-champagne-2: #87662e;
+  --color-champagne-3: #cbb078;
+  --color-champagne-soft: #eee2c9;
+  --color-brass: #6f5526;
 
-  /* ── Semantic (calm) ───────────────────────── */
-  --color-success: #5f7a5c;
-  --color-success-soft: #e6ece3;
-  --color-warning: #a67c3d;
-  --color-warning-soft: #f3e9d8;
-  --color-error: #9b4a3f;
-  --color-error-soft: #f2e2de;
+  /* ── Campaign color worlds (use deliberately) ─ */
+  --color-noir: #16120c; /* campaign ground */
+  --color-noir-2: #221c13;
+  --color-terra: #96522f; /* terracotta accent */
+  --color-terra-2: #75391f;
+  --color-terra-soft: #ecd8c7;
+  --color-olive: #5f6236;
+  --color-olive-soft: #e4e3cf;
+  --color-linen: #dfd2b4;
 
-  /* ── Admin (dark charcoal) ─────────────────── */
-  --color-admin-bg: #1c1d1f;
-  --color-admin-panel: #242628;
-  --color-admin-border: #34363a;
-  --color-admin-text: #e9e4da;
-  --color-admin-muted: #9a958c;
+  /* ── Semantic (restrained) ───────────────────── */
+  --color-success: #54704a;
+  --color-success-soft: #e4ead9;
+  --color-warning: #91632c;
+  --color-warning-soft: #f0e4cc;
+  --color-error: #96412f;
+  --color-error-soft: #f0dbd3;
 
-  /* ── Typography ────────────────────────────── */
-  --font-display: var(--font-display), "Cormorant Garamond", Georgia, serif;
-  --font-body: var(--font-body), "Inter", system-ui, sans-serif;
+  /* ── Admin — maison back office (warm noir) ──── */
+  --color-admin-bg: #17130d;
+  --color-admin-panel: #211c14;
+  --color-admin-panel-2: #2a241a;
+  --color-admin-border: #3b3327;
+  --color-admin-text: #ede6d8;
+  --color-admin-muted: #a4977f;
+  --color-admin-gold: #cbb078;
 
-  --text-display-xl: 4.5rem;
-  --text-display-xl--line-height: 1.02;
-  --text-display-xl--letter-spacing: -0.02em;
-  --text-display-lg: 3.25rem;
-  --text-display-lg--line-height: 1.05;
-  --text-display-lg--letter-spacing: -0.015em;
-  --text-display-md: 2.25rem;
-  --text-display-md--line-height: 1.1;
+  /* ── Typography ──────────────────────────────── */
+  --font-display: "Newsreader Variable", "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Manrope Variable", "Manrope", system-ui, -apple-system, sans-serif;
+
+  --text-display-xl: clamp(3.25rem, 8.5vw, 7.5rem);
+  --text-display-xl--line-height: 0.98;
+  --text-display-xl--letter-spacing: -0.015em;
+  --text-display-lg: clamp(2.4rem, 5.4vw, 4.75rem);
+  --text-display-lg--line-height: 1.01;
+  --text-display-lg--letter-spacing: -0.012em;
+  --text-display-md: clamp(1.85rem, 3.2vw, 2.9rem);
+  --text-display-md--line-height: 1.08;
   --text-display-md--letter-spacing: -0.01em;
-  --text-display-sm: 1.625rem;
-  --text-display-sm--line-height: 1.2;
-  --text-eyebrow: 0.6875rem;
-  --text-eyebrow--line-height: 1;
-  --text-eyebrow--letter-spacing: 0.22em;
+  --text-display-sm: clamp(1.35rem, 2vw, 1.7rem);
+  --text-display-sm--line-height: 1.18;
+  --text-display-sm--letter-spacing: -0.005em;
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.6;
+  --text-body: 0.9375rem;
+  --text-body--line-height: 1.7;
+  --text-small: 0.8125rem;
+  --text-micro: 0.75rem;
+  --text-eyebrow: 0.6563rem;
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.26em;
 
-  /* ── Spacing (architectural) ───────────────── */
-  --spacing-section: 7rem;
-  --spacing-section-sm: 4.5rem;
+  /* ── Spacing (architectural, generous) ───────── */
+  --spacing-section: 8.5rem;
+  --spacing-section-sm: 5.5rem;
   --spacing-gutter: 1.25rem;
-  --spacing-gutter-lg: 3rem;
+  --spacing-gutter-lg: clamp(2rem, 5vw, 4rem);
 
-  /* ── Radius (near-zero) ────────────────────── */
+  /* ── Radius (architectural near-zero) ────────── */
   --radius-none: 0;
   --radius-xs: 1px;
   --radius-sm: 2px;
   --radius-md: 3px;
   --radius-lg: 4px;
 
-  /* ── Shadows (whisper) ─────────────────────── */
-  --shadow-whisper: 0 1px 2px rgba(23, 24, 26, 0.04);
-  --shadow-soft: 0 6px 24px -12px rgba(23, 24, 26, 0.12);
-  --shadow-float: 0 18px 50px -24px rgba(23, 24, 26, 0.22);
-  --shadow-drawer: -12px 0 60px -30px rgba(23, 24, 26, 0.3);
+  /* ── Shadows (rare, editorial) ───────────────── */
+  --shadow-whisper: 0 1px 0 rgba(33, 27, 18, 0.06);
+  --shadow-soft: 0 10px 40px -20px rgba(33, 27, 18, 0.18);
+  --shadow-float: 0 24px 60px -30px rgba(33, 27, 18, 0.28);
+  --shadow-drawer: -14px 0 70px -34px rgba(33, 27, 18, 0.32);
 
-  /* ── Motion ────────────────────────────────── */
+  /* ── Motion grammar ──────────────────────────── */
   --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-calm: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-exit: cubic-bezier(0.55, 0, 1, 0.45);
-  --duration-slow: 900ms;
-  --duration-base: 600ms;
-  --duration-fast: 320ms;
+  --duration-slow: 1100ms;
+  --duration-base: 700ms;
+  --duration-fast: 340ms;
 
-  /* ── Z-index ───────────────────────────────── */
+  /* ── Z-index ─────────────────────────────────── */
   --z-header: 40;
   --z-overlay: 50;
   --z-drawer: 60;
@@ -95,11 +125,18 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
   }
   body {
-    @apply bg-paper text-charcoal font-body antialiased;
-    font-feature-settings: "kern", "liga", "ss01";
+    @apply bg-paper font-body text-charcoal antialiased;
+    font-optical-sizing: auto;
+    font-feature-settings: "kern", "liga", "ss01", "cv11";
     text-rendering: optimizeLegibility;
+    font-size: var(--text-body);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
   }
   ::selection {
     background: var(--color-champagne-3);
@@ -118,6 +155,9 @@
   select {
     font: inherit;
   }
+  img {
+    user-select: none;
+  }
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
@@ -132,9 +172,10 @@
   }
 }
 
+/* ── Layout primitive ─────────────────────────────────────────── */
 @utility container-lux {
   width: 100%;
-  max-width: 88rem;
+  max-width: 90rem;
   margin-inline: auto;
   padding-inline: var(--spacing-gutter);
   @media (min-width: 1024px) {
@@ -142,26 +183,59 @@
   }
 }
 
+@utility container-narrow {
+  width: 100%;
+  max-width: 46rem;
+  margin-inline: auto;
+  padding-inline: var(--spacing-gutter);
+  @media (min-width: 1024px) {
+    padding-inline: 0;
+  }
+}
+
+/* ── Typographic helpers ──────────────────────────────────────── */
 @utility eyebrow {
   font-size: var(--text-eyebrow);
   letter-spacing: var(--text-eyebrow--letter-spacing);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-muted);
+  font-family: var(--font-body);
 }
 
+@utility rule-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--text-eyebrow);
+  letter-spacing: var(--text-eyebrow--letter-spacing);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-muted);
+  &::before {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.55;
+  }
+}
+
+/* ── Hairline rules ───────────────────────────────────────────── */
 @utility hairline {
   border-color: var(--color-stone);
 }
 
+/* ── Forms ────────────────────────────────────────────────────── */
 @utility field {
   width: 100%;
-  min-height: 48px;
+  min-height: 52px;
   background: var(--color-cream);
   border: 1px solid var(--color-stone-2);
-  padding: 0.75rem 0.9rem;
+  padding: 0.8rem 1rem;
   color: var(--color-ink);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xs);
+  box-shadow: inset 0 1px 0 rgba(33, 27, 18, 0.03);
   transition: border-color var(--duration-fast) var(--ease-calm);
   &::placeholder {
     color: var(--color-muted-2);
@@ -169,28 +243,72 @@
   &:focus {
     outline: none;
     border-color: var(--color-champagne);
+    box-shadow: 0 0 0 3px rgba(163, 128, 63, 0.12);
   }
 }
 
+/* ── Buttons — editorial, not pill-shaped ─────────────────────── */
 @utility btn-primary {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  min-height: 48px;
-  padding: 0 1.75rem;
+  gap: 0.65rem;
+  min-height: 52px;
+  padding: 0 2.1rem;
   background: var(--color-ink);
   color: var(--color-paper);
-  font-size: 0.8125rem;
-  letter-spacing: 0.12em;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-weight: 500;
-  border-radius: var(--radius-sm);
+  font-weight: 600;
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+  isolation: isolate;
   transition:
-    background-color var(--duration-fast) var(--ease-calm),
-    opacity var(--duration-fast) var(--ease-calm);
+    color var(--duration-fast) var(--ease-calm),
+    background-color var(--duration-fast) var(--ease-calm);
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--color-champagne-2);
+    transform: translateY(101%);
+    transition: transform 420ms var(--ease-luxe);
+  }
   &:hover {
-    background: var(--color-charcoal-2);
+    color: #fff;
+  }
+  &:hover::after {
+    transform: translateY(0);
+  }
+  &:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+}
+
+@utility btn-light {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 52px;
+  padding: 0 2.1rem;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: var(--radius-xs);
+  isolation: isolate;
+  transition: background-color var(--duration-fast) var(--ease-calm);
+  &:hover {
+    background: var(--color-champagne-3);
   }
   &:disabled {
     opacity: 0.45;
@@ -202,17 +320,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  min-height: 48px;
-  padding: 0 1.75rem;
+  gap: 0.65rem;
+  min-height: 52px;
+  padding: 0 2.1rem;
   background: transparent;
   color: var(--color-ink);
   border: 1px solid var(--color-ink);
-  font-size: 0.8125rem;
-  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-weight: 500;
-  border-radius: var(--radius-sm);
+  font-weight: 600;
+  border-radius: var(--radius-xs);
   transition:
     background-color var(--duration-fast) var(--ease-calm),
     color var(--duration-fast) var(--ease-calm);
@@ -230,17 +348,17 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  min-height: 44px;
-  font-size: 0.8125rem;
-  letter-spacing: 0.12em;
+  min-height: 46px;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-ink);
   border-bottom: 1px solid var(--color-champagne);
-  padding-bottom: 2px;
   transition: color var(--duration-fast) var(--ease-calm);
   &:hover {
     color: var(--color-champagne-2);
+    border-color: currentColor;
   }
 }
 
@@ -250,7 +368,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -3px;
     width: 100%;
     height: 1px;
     background: currentColor;
@@ -264,6 +382,28 @@
   }
 }
 
+/* ── Image frames ─────────────────────────────────────────────── */
+@utility frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-stone);
+}
+
+@utility frame-grain {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-stone);
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.7;
+  }
+}
+
+/* ── Skeleton loading ─────────────────────────────────────────── */
 @utility skeleton {
   position: relative;
   overflow: hidden;
@@ -273,8 +413,8 @@
     position: absolute;
     inset: 0;
     transform: translateX(-100%);
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
-    animation: shimmer 1.8s var(--ease-calm) infinite;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+    animation: shimmer 2s var(--ease-calm) infinite;
   }
 }
 
@@ -284,9 +424,15 @@
   }
 }
 
+/* ── Misc ─────────────────────────────────────────────────────── */
 @utility scrollbar-none {
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+@utility no-scrollbar-x {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-sand) transparent;
 }
