@@ -15,7 +15,7 @@ export function LoginForm({ next }: { next?: string }) {
       {state && !state.ok && !state.fieldErrors && <p className="text-sm text-error" role="alert">{state.error}</p>}
       <button disabled={pending} className="btn-primary w-full">{pending ? "Connexion…" : "Se connecter"}</button>
       <p className="text-center text-sm text-muted">Pas encore de compte ? <Link href={`/inscription${next ? `?next=${encodeURIComponent(next)}` : ""}`} className="text-ink underline underline-offset-4">Créer un compte</Link></p>
-      <div className="border-t border-stone pt-4 text-xs text-muted-2"><p className="eyebrow mb-2">Comptes de démonstration</p><p>client@cleopatre.tn / Client123!</p><p>admin@cleopatre.tn / Admin123!</p></div>
+      <p className="pt-2 text-center text-[11px] text-muted-2">Espace réservé aux clientes et équipes Cléopâtre.</p>
     </form>
   );
 }
